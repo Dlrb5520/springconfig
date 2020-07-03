@@ -1,0 +1,12 @@
+# Project exclude paths
+/api/target/
+/com.eureka7001/target/
+/common/target/
+/config/target/
+/entity/target/
+/hystrix_dashborad/target/
+/login_consumer/target/
+/login_product/target/
+/order_consumer/target/
+/order_product/target/
+/zuul/target/

@@ -1,0 +1,41 @@
+server:
+  port: 9001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+feign:
+  hystrix:
+    enabled: true
+  # 服务降级的超时时间配置(超时的时间，服务2s未返回就判断为超时)
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMillseconds: 2000
+spring:
+  freemarker:
+    suffix: .html
+    templateLoaderPath: classpath:/templates/
+    cache: false #禁用模板缓存,正式环境取消
+  application:
+    name: login-consumer9001
+  main:
+    allow-bean-definition-overriding: true
+    #重试机制
+    #该参数用来开启重试机制，默认是关闭
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
+  http:
+    multipart:
+      enabled=false:ribbon:
+  servlet:
+    multipart:
+      enabled: false
+  #该参数用来开启重试机制，默认是关闭
+  OkToRetryOnAllOperations: true
+  #对当前实例的重试次数
+  MaxAutoRetries: 2

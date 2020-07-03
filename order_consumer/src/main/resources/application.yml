@@ -1,0 +1,27 @@
+server:
+  port: 9002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+feign:
+  hystrix:
+    enabled: true
+    # 服务降级的超时时间配置(超时的时间，服务2s未返回就判断为超时)
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMillseconds: 2000
+
+spring:
+  freemarker:
+    suffix: .html
+    templateLoaderPath: classpath:/templates/
+    cache: false #禁用模板缓存,正式环境取消
+  application:
+    name: order-consumer9002
+  main:
+    allow-bean-definition-overriding: true

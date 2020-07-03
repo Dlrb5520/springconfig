@@ -1,0 +1,42 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: my-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+      #healthcheck:
+      #enabled: true  #开启自定义健康检查
+  instance:
+    #eureka服务器在接收到最后一个心跳之后等待的时间，然后才能从列表中删除此实例 默认90s（开发环境)
+    lease-expiration-duration-in-seconds: 10
+    #eureka客户端需要向eureka服务器发送心跳的频率 默认30s （开发环境)
+    lease-renewal-interval-in-seconds: 1
+
+zuul:
+  routes:
+    my-url1:                                     #传统的路由配置,此名称可以自定义
+      path: /lg/**                               #映射的url
+      url: http://localhost:9001/                #被映射的url
+    my-url2:                                     #传统的路由配置,此名称可以自定义
+      path: /od/**                               #映射的url
+      url: http://localhost:9002/
+    orient-service-url:                          #面向服务的路由配置,此名称可以自定义
+      path: /os-url/**
+      service-id: login-consumer9001             #服务名
+  #zuul超时设置
+  host:
+    socket-timeout-millis: 5000
+    connect-timeout-millis: 8000
+  ignored-services: "*"                           #隐藏所以微服务
+
+# 端点管理
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

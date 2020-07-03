@@ -1,0 +1,26 @@
+server:
+  port: 9528
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+
+
+spring:
+  application:
+    name: springcloud-config
+  cloud:
+    config:
+      label: master #配置仓库分支
+      server:
+        git:
+          uri: git@github.com:Dlrb5520/springcloud2020.git # 配置git仓库地址
+          username: Dlrb5520  #git登录用户名
+          password: xuanjun123. #git登录密码
+          passphrase: spring-config-key # 访问ssh私钥口令
+          ignore-local-ssh-settings: true # If true, use property based SSH config instead of file based.
+          private-key: |
+                         ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDduMjQUvD7NtHTGrr3pYXLP/5aVUIAGGSwjUmBAqpINewJFe8giZV7RP/QNt4BD45dB+FVEY8kpbpgwZxoE85HhgnVR4e1febAVg1thWORC0i/zto4WdVXgY95BW1aojPruV01zQZITV+018cxc7igadThmETyVaQQP4RPGnCGm7IfdSAkgf6VaSFOalwl4WgcvD1pKrMCVjwKPz0WtgjFnRGaKZ35/ztkgGTPW7iAqPZnMnk/lGvm551rmux6FH60XUdmZfH7mMy9yh53QdoAP66AH4trHrlZpsbeJOwYj47kPnqGqPqkEn6ulMmeyLBnysM7gdWbFk87pLgrGM7o56ywMpKbwUp+poLfUvDoT3GaH8bay+wfRbDWegF6i0ot0Ldvly+imv+s1GwcaAcRYXlV7SAcefmitngMPxk5LjZGZRZdoI3N0wbE0dFQjuK9ttHxHJl1btFGaiuMxI0fp06ZDPo5GjWZt9dRRNB99/ua+9fG4if4aAL83VGaZGU= Dlrb5520
+
+
