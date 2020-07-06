@@ -9,16 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>com.config</artifactId>
-    <properties>
-    <cloud-config.version>2.1.1.RELEASE</cloud-config.version>
-    </properties>
+    <artifactId>com.config-client</artifactId>
+
     <dependencies>
-        <!--springcloud-config 配置中心-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-            <version>${cloud-config.version}</version>
+            <artifactId>spring-cloud-starter-config</artifactId>
+            <version>2.1.1.RELEASE</version>
         </dependency>
     </dependencies>
 </project>

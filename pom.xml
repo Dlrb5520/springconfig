@@ -20,6 +20,7 @@
         <module>order_consumer</module>
         <module>order_product</module>
         <module>config</module>
+        <module>config_client</module>
     </modules>
 
     <parent>
@@ -48,7 +49,6 @@
         <commons-net.version>3.3</commons-net.version>
         <mybatis-plus.version>3.0.5</mybatis-plus.version>
         <pagehelper.version>1.2.3</pagehelper.version>
-        <cloud-config.version>2.1.1.RELEASE</cloud-config.version>
     </properties>
 
     <dependencies>
@@ -254,12 +254,7 @@
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
 
-        <!--springcloud-config 配置中心-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-            <version>${cloud-config.version}</version>
-        </dependency>
+
 
         <dependency>
             <groupId>commons-net</groupId>
