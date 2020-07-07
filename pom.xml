@@ -23,6 +23,10 @@
         <module>config_client</module>
         <module>com.eureka7002</module>
         <module>com.eureka7003</module>
+        <module>login_product8002</module>
+        <module>login_product8003</module>
+        <module>login_product8003</module>
+        <module>login_product8003</module>
     </modules>
 
     <parent>

@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com.entity" />
+        <module name="login_product8003" />
         <module name="config_client" />
         <module name="order_product" />
         <module name="zuul" />
         <module name="order_consumer" />
         <module name="com.eureka7003" />
         <module name="com.eureka7002" />
+        <module name="login_product8002" />
         <module name="common" />
         <module name="hystrix_dashborad" />
         <module name="comeureka7001" />
@@ -36,6 +38,8 @@
       <module name="hystrix_dashborad" options="-parameters" />
       <module name="login_consumer" options="-parameters" />
       <module name="login_product" options="-parameters" />
+      <module name="login_product8002" options="-parameters" />
+      <module name="login_product8003" options="-parameters" />
       <module name="order_consumer" options="-parameters" />
       <module name="order_product" options="-parameters" />
       <module name="springcloud2020" options="-parameters" />

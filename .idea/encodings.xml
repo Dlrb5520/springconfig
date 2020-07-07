@@ -13,6 +13,10 @@
     <file url="file://$PROJECT_DIR$/hystrix_dashborad" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/login_consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/login_product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/login_product8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/login_product8003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/login_product8003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/login_product8003" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order_consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/order_product" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuul" charset="UTF-8" />

@@ -31,25 +31,49 @@ public class sys_user implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * 用户账号
+     */
     @TableId(value = "account",type = IdType.INPUT)  //主键
     private long account;
 
-
+    /**
+     * 用户名称
+     */
     @TableField(value = "username")
     private String username;
 
+    /**
+     * 用户密码
+     */
     @TableField(value = "password")
     private String password;
 
+    /**
+     * 创建时间
+     */
     @TableField(value = "createtime")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Date createtime;
 
+    /**
+     * 部门id
+     */
     @TableField(value = "dept_id")
     private Integer deptid;
 
+    /**
+     * 用户状态
+     */
     @TableField(value = "status")
     private Integer status;
+
+
+    /**
+     * 数据名称
+     */
+    @TableField(value = "datasourcename")
+    private String datasourcename;
 
 }
