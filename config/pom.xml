@@ -11,7 +11,7 @@
 
     <artifactId>com.config</artifactId>
     <properties>
-    <cloud-config.version>2.1.1.RELEASE</cloud-config.version>
+    <cloud-config.version>2.2.0.RELEASE</cloud-config.version>
     </properties>
     <dependencies>
         <!--springcloud-config 配置中心-->
