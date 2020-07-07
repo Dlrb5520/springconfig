@@ -21,6 +21,8 @@
         <module>order_product</module>
         <module>config</module>
         <module>config_client</module>
+        <module>com.eureka7002</module>
+        <module>com.eureka7003</module>
     </modules>
 
     <parent>

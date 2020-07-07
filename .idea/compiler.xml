@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="order_product" />
-        <module name="api" />
-        <module name="comeureka7001" />
         <module name="com.entity" />
-        <module name="common" />
-        <module name="login_product" />
-        <module name="hystrix_dashborad" />
-        <module name="order_consumer" />
-        <module name="login_consumer" />
         <module name="config_client" />
-        <module name="config" />
+        <module name="order_product" />
         <module name="zuul" />
+        <module name="order_consumer" />
+        <module name="com.eureka7003" />
+        <module name="com.eureka7002" />
+        <module name="common" />
+        <module name="hystrix_dashborad" />
+        <module name="comeureka7001" />
+        <module name="config" />
+        <module name="login_consumer" />
+        <module name="api" />
+        <module name="login_product" />
       </profile>
     </annotationProcessing>
   </component>
@@ -25,6 +27,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api" options="-parameters" />
       <module name="com.entity" options="-parameters" />
+      <module name="com.eureka7002" options="-parameters" />
+      <module name="com.eureka7003" options="-parameters" />
       <module name="comeureka7001" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="config" options="-parameters" />
