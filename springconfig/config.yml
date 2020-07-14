@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://localhost:7003/eureka/
 spring:
   application:
-    name: springconfig-client
+    name: com-config-client
