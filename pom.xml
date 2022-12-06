@@ -52,7 +52,7 @@
         <druid.version>1.1.14</druid.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
         <fastjson.version>1.2.30</fastjson.version>
-        <commons-net.version>3.3</commons-net.version>
+        <commons-net.version>3.9.0</commons-net.version>
         <mybatis-plus.version>3.0.5</mybatis-plus.version>
         <pagehelper.version>1.2.3</pagehelper.version>
     </properties>
